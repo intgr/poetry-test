@@ -44,7 +44,7 @@ jobs:
             cat pyproject.toml
             poetry lock
             cat poetry.lock
-            poetry add pynacl
+            poetry add pynacl || true
             cat poetry.lock
 
 # Invoke jobs via workflows
