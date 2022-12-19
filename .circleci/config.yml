@@ -36,7 +36,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: mkdir test && cd test && pip install poetry && poetry init -n && poetry add pynacl && poetry lock && cat poetry.lock
+          command: mkdir test && cd test && pip install poetry && poetry init -n && poetry add pynacl; cat poetry.lock
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
